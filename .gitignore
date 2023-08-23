@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/bin
-/obj
-/Properties/PublishProfiles
-/QuickGridColumnResizer.csproj.user
+/src/bin
+/src/obj
+/src/Properties/PublishProfiles
+/src/QuickGridColumnResizer.csproj.user

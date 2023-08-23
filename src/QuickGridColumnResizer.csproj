@@ -5,24 +5,25 @@
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<Authors>Pawel Bielecki</Authors>
 		<Description>Adds resizable columns functionality to the new QuickGrid component available in .NET 8</Description>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackageVersion>1.0.3</PackageVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageIcon>icons8-resize-horizontal-96.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/BieleckiLtd/QuickGrid-Column-Resizer</PackageProjectUrl>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<None Update="icons8-resize-horizontal-96.png">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-		<None Update="Readme.md">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-	</ItemGroup>
+    <ItemGroup>
+      <None Include="..\icon.png" />
+      <None Include="..\LICENSE.txt">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\Readme.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
 	
 </Project>

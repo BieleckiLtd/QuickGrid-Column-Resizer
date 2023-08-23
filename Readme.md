@@ -1,4 +1,6 @@
-﻿# Setup
+﻿https://raw.githubusercontent.com/BieleckiLtd/QuickGrid-Column-Resizer/master/demo.mp4
+
+# Setup
 1. Add reference to the package: `dotnet add package QuickGridColumnResizer`
 2. In `index.html` file (Blazor WebAssembly App) or `App.razor` file (Blazor Web App) add following lines:
 ```html
