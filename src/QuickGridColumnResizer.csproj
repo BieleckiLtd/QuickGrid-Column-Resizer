@@ -8,13 +8,15 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<PackageVersion>1.0.3</PackageVersion>
+		<PackageVersion>1.0.4</PackageVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/BieleckiLtd/QuickGrid-Column-Resizer</PackageProjectUrl>
 	</PropertyGroup>
 
     <ItemGroup>
+	  <None Include="..\icon.png" Pack="true" PackagePath=""/>
       <None Include="..\LICENSE.txt">
         <Pack>True</Pack>
         <PackagePath>\</PackagePath>
