@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+		<Title>QuickGrid Column Resizer</Title>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<Authors>Pawel Bielecki</Authors>
+		<Description>Adds resizable columns functionality to the new QuickGrid component available in .NET 8</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageVersion>1.0.3</PackageVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageIcon>icons8-resize-horizontal-96.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="icons8-resize-horizontal-96.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="Readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	
+</Project>
