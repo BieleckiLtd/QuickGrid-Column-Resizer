@@ -1,4 +1,5 @@
-﻿https://raw.githubusercontent.com/BieleckiLtd/QuickGrid-Column-Resizer/master/demo.mp4
+https://github.com/BieleckiLtd/QuickGrid-Column-Resizer/assets/57046415/e31b2441-f585-406b-b907-e9e1bc4d978c
+
 
 # Features
 1. Does not behave erratically with virtualised content.
