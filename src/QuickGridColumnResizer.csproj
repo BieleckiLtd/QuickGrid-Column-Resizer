@@ -15,7 +15,6 @@
 	</PropertyGroup>
 
     <ItemGroup>
-      <None Include="..\icon.png" />
       <None Include="..\LICENSE.txt">
         <Pack>True</Pack>
         <PackagePath>\</PackagePath>

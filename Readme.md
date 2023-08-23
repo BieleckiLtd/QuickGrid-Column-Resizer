@@ -1,8 +1,14 @@
 ﻿https://raw.githubusercontent.com/BieleckiLtd/QuickGrid-Column-Resizer/master/demo.mp4
 
+# Features
+1. Does not behave erratically with virtualised content.
+2. Double-click to auto-adjust column width.
+3. Middle-click to set initial width.
+
 # Setup
 1. Add reference to the package: `dotnet add package QuickGridColumnResizer`
 2. In `index.html` file (Blazor WebAssembly App) or `App.razor` file (Blazor Web App) add following lines:
+
 ```html
 <link rel="stylesheet" href="_content/QuickGridColumnResizer/style.css" />
 
@@ -10,6 +16,7 @@
 ```
 
 For example:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +57,9 @@ For example:
 
 # Custom styling
 You can override default styles.
+
 1. If you use global style sheet:
+
 ```css
 table.quickgrid .column-resizer {
     cursor: ew-resize;
@@ -61,7 +70,9 @@ table.quickgrid .column-resizer {
         content: "|";
     }
 ```
+
 2. If you use isolated style sheet
+
 ```css
 ::deep table.quickgrid .column-resizer {
     cursor: ew-resize;
