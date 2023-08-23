@@ -1,14 +1,14 @@
 ﻿# Setup
 1. Add reference to the package: `dotnet add package QuickGridColumnResizer`
 2. In `index.html` file (Blazor WebAssembly App) or `App.razor` file (Blazor Web App) add following lines:
-```
+```html
 <link rel="stylesheet" href="_content/QuickGridColumnResizer/style.css" />
 
 <script src="_content/QuickGridColumnResizer/script.js"></script>
 ```
 
 For example:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +49,7 @@ For example:
 # Custom styling
 You can override default styles.
 1. If you use global style sheet:
-```
+```css
 table.quickgrid .column-resizer {
     cursor: ew-resize;
     border: none;
@@ -60,7 +60,7 @@ table.quickgrid .column-resizer {
     }
 ```
 2. If you use isolated style sheet
-```
+```css
 ::deep table.quickgrid .column-resizer {
     cursor: ew-resize;
     border: none;
