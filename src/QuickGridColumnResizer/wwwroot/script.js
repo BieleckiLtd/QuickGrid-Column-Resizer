@@ -40,7 +40,7 @@ function handleMouseDown(div, event) {
         implementDraggingLogic(th, event.clientX);
     }
     else if (event.button === 1) { // MMB
-        th.style.width = ''; // Remove width style
+        setWidth(th, ''); // Remove width style
         event.preventDefault(); // Prevent the default scroll event
     }
 }
@@ -55,7 +55,7 @@ function implementDraggingLogic(th, startX) {
 
         requestAnimationFrame(() => {
             const newWidth = startWidth + event.clientX - startX;
-            th.style.width = newWidth + 'px';
+            setWidth(th, newWidth + 'px');
         });
     }
 
@@ -72,7 +72,7 @@ function implementDraggingLogic(th, startX) {
 // Handles the double-click event to remove the width style and apply maximum content width
 function handleDoubleClick(div) {
     const th = div.closest('th');
-    th.style.width = '0';
+    setWidth(th, '0');
 
     const index = Array.from(th.parentNode.children).indexOf(th);
     const table = th.closest('table');
@@ -93,5 +93,9 @@ function handleDoubleClick(div) {
         cell.style.cssText = originalStyle;
     });
 
-    th.style.width = maxWidth + 5 + 'px';
+    setWidth(th, maxWidth + 5 + 'px');
+}
+
+function setWidth(element, width) {
+    element.style.width = width;
 }

@@ -1,0 +1,39 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.QuickGrid;
+@using QuickGridColumnResizer.Examples.Data;
+@inject WeatherForecastService ForecastService;
+
+
+<div class="m-4">
+    <p> Double-click on the resizer to auto-adjust the column width;
+        use the middle-click to reset the column to its original width.</p>
+    <div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked @onclick="()=>isfittingContentWidth = true">
+            <label class="form-check-label" for="exampleRadios1">container width: fit-content</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" @onclick="()=>isfittingContentWidth = false">
+            <label class="form-check-label" for="exampleRadios2">container width: none</label>
+        </div>
+    </div>
+</div>
+
+<div class="grid m-4" tabindex="-1" style="@(isfittingContentWidth ? "width: fit-content;" : null)">
+    <QuickGrid Items="@forecasts" Virtualize="true">
+        <PropertyColumn Title="Date" Property="@(c => c.Date)" Format="u" Sortable="true" IsDefaultSortColumn="true" />
+        <PropertyColumn Title="Temp. (C)" Property="@(c => c.TemperatureC)" Sortable="true" />
+        <PropertyColumn Title="Temp. (F)" Property="@(c => c.TemperatureF)" Sortable="true" />
+        <PropertyColumn Property="@(c => c.Summary)" Sortable="true" Align="Align.Right" />
+    </QuickGrid>
+</div>
+
+@code {
+    private IQueryable<WeatherForecast>? forecasts;
+    private bool isfittingContentWidth = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = (await ForecastService.GetForecastAsync(500)).AsQueryable();
+    }
+}

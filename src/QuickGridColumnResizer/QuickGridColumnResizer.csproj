@@ -14,17 +14,16 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/BieleckiLtd/QuickGrid-Column-Resizer</PackageProjectUrl>
 	</PropertyGroup>
-
-    <ItemGroup>
-	  <None Include="..\icon.png" Pack="true" PackagePath=""/>
-      <None Include="..\LICENSE.txt">
-        <Pack>True</Pack>
-        <PackagePath>\</PackagePath>
-      </None>
-      <None Include="..\Readme.md">
-        <Pack>True</Pack>
-        <PackagePath>\</PackagePath>
-      </None>
-    </ItemGroup>
 	
+	<ItemGroup>
+		<None Include="..\..\icon.png" Pack="true" PackagePath=""/>
+		<None Include="..\..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\Readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
